@@ -1,0 +1,26 @@
+What is Prometheus?
+Prometheus is an open source monitoring tool
+Provides out-of-the-box monitoring capabilities for the Kubernetes container orchestration platform. It can monitor servers and databases as well.
+Collects and stores metrics as time-series data, recording information with a timestamp 
+It is based on pull and collects metrics from targets by scraping metrics HTTP endpoints.
+
+What is Grafana?
+Grafana is an open source visualization and analytics software. 
+It allows you to query, visualize, alert on, and explore your metrics no matter where they are stored.
+
+Key components:
+    1. Prometheus server - Processes and stores metrics data
+    2. Alert Manager - Sends alerts to any systems/channels
+    3. Grafana - Visualize scraped data in UI
+    
+Installation Method:
+The are are many ways you can setup Prometheus and Grafana. You can install in following ways:
+
+1. Create all configuration files of both Prometheus and Grafana and execute them in right order.
+
+2. Prometheus Operator - to simplify and automate the configuration and management of the Prometheus monitoring stack running on a Kubernetes cluster
+
+3. Helm chart (Recommended) - Using helm to install Prometheus Operator including Grafan
+
+Why to use Helm?
+Helm is a package manager for Kubernetes. Helm simplifies the installation of all components in one command. Install using Helm is recommended as you will not be missing any configuration steps and very efficient. 
