@@ -1,0 +1,13 @@
+Helm 3 can be installed many ways. We will install Helm 3 using scripts option.
+
+          Download scripts 
+          curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3
+
+          provide permission
+          sudo chmod 700 get_helm.sh
+
+          Execute script to install
+          sudo ./get_helm.sh
+
+          Verify installation
+          helm version --client
